@@ -1,5 +1,4 @@
 # MLCF-SOD: Multi-level feature enhancement and cross-layer fusion for small object ship detection
-The repo is the official implementation of CEASC.
 
 
 Our config file is at [configs/MY](configs/MY)
