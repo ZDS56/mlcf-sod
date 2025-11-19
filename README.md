@@ -40,10 +40,6 @@ python tools/train.py /path/to/config-file --work-dir /path/to/work-dir
 bash tools/dist_train.sh /path/to/config-file num-gpus --work-dir /path/to/work-dir
 ```
 
-#### Checkpoints: 
-We provide the following checkpoints:
-- RetinaNet baseline, corresponding to [baseline_retinanet_res18_visdrone](https://github.com/Cuogeihong/CEASC/blob/main/configs/UAV/baseline_retinanet_res18_visdrone.py): [Google Drive](https://drive.google.com/drive/folders/1Ws5UQri07GGZo_PUyGjFBQA5cI3pjn2K?usp=sharing)
-- RetinaNet CEASC, corresponding to [dynamic_retinanet_res18_visdrone](https://github.com/Cuogeihong/CEASC/blob/main/configs/UAV/dynamic_retinanet_res18_visdrone.py): [Google Drive](https://drive.google.com/drive/folders/1Gu0D5XULRkMEGNTGGKNj7X6-WiZs2a34?usp=sharing)
 
 
 ### 3. Test
@@ -52,20 +48,7 @@ We provide the following checkpoints:
 python tools/test.py /path/to/config-file /path/to/work-dir/latest.pth --eval bbox
 ```
 
-## Citation
 
-If you find our paper or this project helps your research, please kindly consider citing our paper in your publication.
-
-```
-@misc{ceasc,
-      title={Adaptive Sparse Convolutional Networks with Global Context Enhancement for Faster Object Detection on Drone Images}, 
-      author={Bowei Du and Yecheng Huang and Jiaxin Chen and Di Huang},
-      year={2023},
-      eprint={2303.14488},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-```
 
 
 
