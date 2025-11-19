@@ -1,11 +1,8 @@
-# CEASC: Adaptive Sparse Convolutional Networks with Global Context Enhancement for Faster Object Detection on Drone Images
+# MLCF-SOD: Multi-level feature enhancement and cross-layer fusion for small object ship detection
 The repo is the official implementation of CEASC.
 
-Our CEASC module is at [mmdet/models/dense_heads](mmdet/models/dense_heads)
 
-Our Sparse Convolution Implementation is at [Sparse_conv](Sparse_conv) 
-
-Our config file is at [configs/UAV](configs/UAV)
+Our config file is at [configs/MY](configs/MY)
 
 ## Requirement
 
@@ -32,11 +29,6 @@ python setup.py install
 cd ..
 ```
 
-## Usage
-
-### 1. Data preparation
-
-You could download VisDrone and UAVDT dataset (COCO Format) from official links or from other repositories like [UFPMP-Det](https://github.com/PuAnysh/UFPMP-Det).
 
 
 ### 2. Training
@@ -51,8 +43,6 @@ bash tools/dist_train.sh /path/to/config-file num-gpus --work-dir /path/to/work-
 
 #### Checkpoints: 
 We provide the following checkpoints:
-- GFL v1 baseline, corresponding to [baseline_gfl_res18_visdrone](https://github.com/Cuogeihong/CEASC/blob/main/configs/UAV/baseline_gfl_res18_visdrone.py): [Google Drive](https://drive.google.com/drive/folders/1OaLSG0Y3bz1DH3R7HB4y-1LBRHpgQ55c?usp=sharing)
-- GFL v1 CEASC, corresponding to [dynamic_gfl_res18_visdrone](https://github.com/Cuogeihong/CEASC/blob/main/configs/UAV/dynamic_gfl_res18_visdrone.py): [Google Drive](https://drive.google.com/drive/folders/1v7pby3LqmcIdDI52KKUQ43Ra3tBQdusR?usp=sharing)
 - RetinaNet baseline, corresponding to [baseline_retinanet_res18_visdrone](https://github.com/Cuogeihong/CEASC/blob/main/configs/UAV/baseline_retinanet_res18_visdrone.py): [Google Drive](https://drive.google.com/drive/folders/1Ws5UQri07GGZo_PUyGjFBQA5cI3pjn2K?usp=sharing)
 - RetinaNet CEASC, corresponding to [dynamic_retinanet_res18_visdrone](https://github.com/Cuogeihong/CEASC/blob/main/configs/UAV/dynamic_retinanet_res18_visdrone.py): [Google Drive](https://drive.google.com/drive/folders/1Gu0D5XULRkMEGNTGGKNj7X6-WiZs2a34?usp=sharing)
 
